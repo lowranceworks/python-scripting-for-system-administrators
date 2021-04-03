@@ -86,8 +86,7 @@ finally:
 ## Exit statues
 right now, if an error occurs the exit status is 0 (traditionally 0 is a passing status) \
 we want to exit with a different status, because if we use this script with another script, an error will occur and the script will continue as the exit status is 0 \ 
-
-**.**
+added the following code:
 ```
 import sys
 ...
@@ -95,15 +94,21 @@ sys.exit(2)
 ```
 
 ## Execute Shell Commands from Python
-.
+how do we interface with external programs? \
+use the subprocess package\module \
+
+
 **.**
 ```
-.
+import subprocess
+proc = subprocess.run(["ls" "-l"])
+
+...
+subprocess.run 
+
 ```
 
 ## Advanced Iteration with List Comprehensions 
-.
-**.**
-```
-.
-```
+[5.1.3 List Comprehensions](https://docs.python.org/3/tutorial/datastructures.html)
+see contains.py for an example \
+`matches = [word.strip() for word in words if snippet in word.lower()]`
