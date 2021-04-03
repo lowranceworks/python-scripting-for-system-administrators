@@ -52,7 +52,7 @@ see running.py
 
 ## Interacting with Files
 
-start a repl in the directory in the file you want to play with \ 
+start a repl in the directory containing the file you want to play with \ 
 open the file to get started: `xmen_file = open('xmen_base.txt', 'r')` \
 
 read the file by calling the read function on the new object: `xmen_file.read()` \ 
@@ -66,7 +66,7 @@ you can move the cursor back to the beginning with `xmen_file.seek(0)` \
 >>> xmen_file.seek(6) 
 6
 >>> xmen_file.read()  
-'\nWolverine\nCyclops\nBishop\nNightcrawler'
+'Wolverine\nCyclops\nBishop\nNightcrawler'
 ```
 
 a file object is an iterable object \
@@ -97,11 +97,7 @@ Cyclops
 Bishop
 Nightcrawler
 ```
+
 when you're done with the file, close it! `xmen_file.close()` \
-
-
-
-
 you can only interact with a file if it's open \
 when you're done interacting with a file, you should close it \
-.
